@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+     
+     <head>
+       
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <title></title>
+      <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+      <!-- Bootstrap core CSS -->
+      <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom styles for this template -->
+      <link href="css/about.css" rel="stylesheet">
+      <style>
+        /*grey line on top-->
+        body{
+          background-color: #5a5a5a;
+        }*/
+         section.about-us-block {margin: 60px 0;background: white;padding: 50px 30px;}
+         section.about-us-block img.img-fluid {border: 1px #cec9c9 solid;padding: 0px;margin-bottom: 60px;border-radius: 5px;height: 550px;object-fit: cover;}		section.about-us-block h3 {font-weight: bold;font-size: 44px;margin-bottom: 17px;}
+         span.color {color: #ea6262;}
+         .team-card {border: 1px #ddd solid;text-align: center;padding: 15px;background: #fff;border-radius: 5px;box-shadow: 3px 3px 9px #ddd;}
+         .team-card h2 {font-size: 18px;font-weight: bold;margin: 14px 0;}
+         .team-card img.rounded-circle {margin-top: -58px;}
+         .team-card img.rounded-circle {margin-top: -58px;border: 2px #b3aeae solid;padding: 6px;width: 112px;height: 112px;object-fit: cover;background: #fff;}
+         .section-header {margin: 0px 0 90px;text-align: center;border-bottom: 1px #ddd solid;padding-bottom: 11px;}
+         .section-header h3 {font-size: 44px;font-weight: bold;}
+         .content-wrap.our-team-list {margin-bottom: 70px;margin-top: 80px;}
+         .content-wrap.our-team-list a.btn.btn-secondary {background: #ea6262;border: #ea6262;}
+         section.about-us-block.content-block .section-header {margin-bottom: 40px;}
+         section.about-us-block.content-block .team-card { text-align: left;    padding: 25px;}
+         @media screen and (max-width:767px){
+		 .about-details { margin-bottom: 20px;}
+		 section.about-us-block.content-block .team-card { text-align: left;    padding:15px;}
+         .content-wrap.our-team-list .team-card {margin-bottom: 70px;}
+         .content-wrap.our-team-list {margin-bottom: 0px;margin-top: 30px;}
+         .section-header h3 {font-size: 27px;}
+         section.about-us-block {margin:50px 0 20px;padding: 30px 10px 0;}
+         section.about-us-block h3 {font-size: 22px;}
+         section.about-us-block img.img-fluid {margin-bottom: 30px;height: auto;}
+         .section-header { margin: 0px 0 30px;padding-bottom: 11px;}
+         section.about-us-block .team-card {margin-bottom: 30px;}
+         .content-wrap.our-team-list .section-header {margin-bottom: 65px;}
+		 section.about-us-block.content-block {margin: 0;padding-top: 0;}
+		 
+         }
+		 
+		 @media screen and (max-width:1199px){
+		   .order-two {order: 2;}
+		 }
+	</style>
+   </head>
+   <body style="backgroung-color: orange;">
+      <header>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<a class="navbar-brand" href="#">Stockers</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+  <ul class="navbar-nav mr-auto">
+<li class="nav-item active">
+ <a class="nav-link" href="index.html">Home </a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="dashboard.html" title="Dashboard">Dashboard</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="about.html" title="Stocks">About</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="contact.html" title="Stocks">Contact Us <span class="sr-only">(current)</span></a>
+</li>
+
+ <li class="nav-item">
+  <a class="nav-link" href="form.html" title="Stocks">Sign Up</a>
+</li>
+
+</ul>
+  <!--<div>
+
+<form class="form-inline mt-2 mt-md-0">
+<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+   </div> -->
+</div>
+  </nav>
+</header>
+      <section class="about-us-block">
+	    <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12 col-lg-12 col-xl-6">
+                  <img class="img-fluid" src="https://cdn.glitch.com/22e4bd92-a986-4cd5-9a9f-fb8494219f7a%2FMan%20Screen.jpg?v=1620838193812" alt="image">
+               </div>
+			    <div class="col-md-12 col-lg-12 col-xl-6 about-details">
+                 <h3> <span class="color">Why Stockers? </span> <br> We follow the leads of the industry</h3>
+                  <p>Stockers automatically updates the latest financial information on our website, giving 
+                    our customers access to live data from Wall Street. We enable our customers to quickly 
+                    create custom charts and graphs of a company’s financial information and comparison timelines. 
+                  </p>
+                  <p> We identify trends and information needed for screening stocks to meet your investment opportunities. 
+                    Customers can utilize the tools to get up to date results and detailed information of the stock market. 
+                    We meet your investment targets and allow you to stream stock market.
+                  </p>
+                  
+               </div>
+			   
+               <div class="col-md-12 col-lg-12 col-xl-6 order-two">
+                   <h3> <span class="color">About the company </span> <br> and what we do</h3>
+
+                  <p>Stockers makes it easy to understand the stock market. 
+                    We provide a clear and practical information about today’s market and help 
+                    our customer to make smart decisions about their finances. Our site is a one stop shop for affordable stocks. 
+                  </p>
+                  <p>We make ourselves available to answer your questions. Our team of young, knowledgeable graduates make it easy 
+                    to understand today rapid changing financial environment.
+                  </p>
+                  <p>At Stockers, we take pride in the quality of our content. Our engeniers create original, accurate and informative 
+                    content that is free of ethical concerns or conflicts. 
+                  </p>
+                  <p>Stockers does not provide individual or customized legal, tax, accounting, or investment services. Since each 
+                    individual's situation is unique, a qualified professional should be consulted before making financial decisions.
+                  </p>
+				        </div>
+               <div class="col-md-12 col-lg-12 col-xl-6">
+                 <img class="img-fluid" src="https://cdn.glitch.com/22e4bd92-a986-4cd5-9a9f-fb8494219f7a%2FStock%20Ipad.jpg?v=1620790479383" alt="image">
+               </div>
+			 </div>
+         </div>
+      </section>
+	  <div class="content-wrap our-team-list">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="section-header">
+                     <h3>Our Team</h3>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="team-card">
+                     <img class="rounded-circle" src="https://cdn.glitch.com/05d73734-0f3d-47c2-94c1-59116e3901b9%2FChris.JPG?v=1616296901191" alt="Generic placeholder image" width="140" height="140">
+                     <h2>Christopher Der</h2>
+                     <p>Project Manager | Programer</p>
+                    
+                    <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+                    
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="team-card">
+                    
+                    <img class="rounded-circle" src="https://cdn.glitch.com/05d73734-0f3d-47c2-94c1-59116e3901b9%2FLance.jpg?v=1616296404134" alt="Generic placeholder image" width="140" height="140">
+                     <h2>Lance Arjona</h2>
+                     <p>Web | QA | Testing | Implementation </p>
+                    
+                   <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="team-card">
+                     <img class="rounded-circle" src="https://cdn.glitch.com/05d73734-0f3d-47c2-94c1-59116e3901b9%2FDarvy.JPG?v=1616296901262" alt="Generic placeholder image" width="140" height="140">
+                     <h2>Darvy Coreas</h2>                 
+                    <p>AWS | EC2 | Terraforms | S3</p>
+                     <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="team-card">
+                     <img class="rounded-circle" src="https://cdn.glitch.com/05d73734-0f3d-47c2-94c1-59116e3901b9%2FNino.jpg?v=1616296404188" alt="Generic placeholder image" width="140" height="140">
+                     <h2>Nino Shtromberg</h2>
+                     <p>Front-End Developer</p>
+                     <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+                  </div>
+               </div>
+            </div>
+          </div>
+      </div>
+	  <section class="about-us-block content-block">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="section-header">
+                     <h3>Partnership Opportunities</h3>
+                  </div>
+               </div>
+			   <div class="col-md-6">
+                  <div class="team-card">
+                     <p>Please reach out to us for partnership oportunities.
+                     </p>
+                  </div>
+               </div>
+			   <div class="col-md-6">
+                  <div class="team-card">
+                     <p>info@stockers.com
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  </body>
+</html>
+
+<!--<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("button");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script> -->
