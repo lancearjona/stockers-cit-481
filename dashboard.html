@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Dashboard Template · Bootstrap v5.0</title>
+
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        } }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="index.html">Stockers</a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <input class="form-control form-control-dark w-400" id="searchBar" type ="text" placeholder="Search Stock" autocomplete="off" aria-label="Search">
+<!--     <input class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="userInput()" value="Search"> -->
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="userInput()">Search</button>
+  
+
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">Sign out</a>
+    </li>
+  </ul>
+</header>
+
+<div class="container-fluid top-padding row">
+  <div class="row">
+    <div class="justify-content-center">
+      <div class="pt-4 d-flex">
+        <div class="cleanslate w24tz-current-time w24tz-middle" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><p><a href="//24timezones.com/Tokyo/time" style="text-decoration: none" class="clock24" id="tz24-1620793387-c1248-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMSIsImNvbnRhaW5lcl9pZCI6ImNsb2NrX2Jsb2NrX2NiNjA5YjU4MmI4M2Q1ZCIsInR5cGUiOiJkYiIsImxhbmciOiJlbiJ9" title="Tokyo timezone" target="_blank">Tokyo</a></p><div id="clock_block_cb609b582b83d5d"></div></div>
+      <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+<!--             <p id = "timezone"></p> -->
+      </div>
+    
+      <div class="pt-4 d-flex">
+        <div class="cleanslate w24tz-current-time w24tz-middle" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><p><a href="//24timezones.com/Beijing/time" style="text-decoration: none" class="clock24" id="tz24-1621134688-c133-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMSIsImNvbnRhaW5lcl9pZCI6ImNsb2NrX2Jsb2NrX2NiNjBhMDhkNjA1NTAzOSIsInR5cGUiOiJkYiIsImxhbmciOiJlbiJ9" title="Beijing timezone" target="_blank">Beijing. China</a></p><div id="clock_block_cb60a08d6055039"></div></div>
+          <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+      </div>
+      
+      <div class="pt-4 d-flex">
+        <div class="cleanslate w24tz-current-time w24tz-middle" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><p><a href="//24timezones.com/United-Kingdom/time" style="text-decoration: none" class="clock24" id="tz24-1621134824-cc16143-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMSIsImNvbnRhaW5lcl9pZCI6ImNsb2NrX2Jsb2NrX2NiNjBhMDhkZTgxZDg5MSIsInR5cGUiOiJkYiIsImxhbmciOiJlbiJ9" title="United Kingdom time" target="_blank">United Kingdom</a></p><div id="clock_block_cb60a08de81d891"></div></div>
+      <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+      </div>
+      <div class="pt-4 d-flex">
+        <div class="cleanslate w24tz-current-time w24tz-middle" style="display: inline-block !important; visibility: hidden !important; min-width:200px !important; min-height:145px !important;"><p><a href="//24timezones.com/State-of-New-York/time" style="text-decoration: none" class="clock24" id="tz24-1619899182-su27-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMSIsImNvbnRhaW5lcl9pZCI6ImNsb2NrX2Jsb2NrX2NiNjA4ZGIzMmUzMGIyZiIsInR5cGUiOiJkYiIsImxhbmciOiJlbiJ9" title="New York local time" target="_blank">New York</a></p><div id="clock_block_cb608db32e30b2f"></div></div>
+        <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+<!--             <p id = "timezone"></p> -->
+      </div>
+      <div class="pt-4 d-flex">
+        <div class="cleanslate w24tz-current-time w24tz-middle" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><p><a href="//24timezones.com/Dallas/time" style="text-decoration: none" class="clock24" id="tz24-1620793466-c170-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMSIsImNvbnRhaW5lcl9pZCI6ImNsb2NrX2Jsb2NrX2NiNjA5YjU4N2EyNjA4YSIsInR5cGUiOiJkYiIsImxhbmciOiJlbiJ9" title="timezone - Dallas" target="_blank">Dallas</a></p><div id="clock_block_cb609b587a2608a"></div></div>
+        <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+<!--             <p id = "timezone"></p> -->
+      </div>
+        <div class="pt-4 d-flex">
+        <div class="cleanslate w24tz-current-time w24tz-middle" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><p><a href="//24timezones.com/Los-Angeles/time" style="text-decoration: none" class="clock24" id="tz24-1620793444-c1137-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMSIsImNvbnRhaW5lcl9pZCI6ImNsb2NrX2Jsb2NrX2NiNjA5YjU4NjQ2NDc2MCIsInR5cGUiOiJkYiIsImxhbmciOiJlbiJ9" title="Los Angeles time now" target="_blank">Los Angeles</a></p><div id="clock_block_cb609b586464760"></div></div>
+        <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+<!--             <p id = "timezone"></p> -->
+      </div>
+    </div>
+  </div>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 float-right">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2" id="buttonChoice"></h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group me-2">
+            <button type="button" id="OpenButton" class="btn btn-sm btn-outline-secondary" onclick="graphOpen()">Open</button>
+            <button type="button" id="HighButton" class="btn btn-sm btn-outline-secondary" onclick="graphHigh()">High</button>
+            <button type="button" id="LowButton" class="btn btn-sm btn-outline-secondary" onclick="graphLow()">Low</button>
+            <button type="button" id="ClosedButton" class="btn btn-sm btn-outline-secondary" onclick="graphClose()">Closed</button>
+            <button type="button" id="VolumeButton" class="btn btn-sm btn-outline-secondary" onclick="graphVolume()">Volume</button>
+          </div>
+        </div>
+      </div>
+      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+      <p id = "type"></p>
+      <h2><strong id="stockName"></strong></h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>Open</th>
+              <th>High</th>
+              <th>Low</th>
+              <th>Closed</th>
+              <th>Volume</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>$ </strong>
+                <strong id="open"></strong>
+              </td>
+              <td>
+                <strong>$ </strong>
+                <strong id="high"></strong>
+              </td>
+              <td>
+                <strong>$ </strong>
+                <strong id="low"></strong>
+              </td>
+              <td>
+                <strong>$ </strong>
+                <strong id="close"></strong>
+              </td>
+              <td>
+                <strong id="volume"></strong>
+              </td>
+              <td>
+                <strong id="latest"></strong>
+              </td>
+            </tr>
+          </tbody>
+          
+          <tbody>
+            <tr>
+              <td>
+                  <strong id="openPercent">
+                  </strong>
+              <div class="arrow">
+                  <img id="openArrow">
+                </div>
+              </td>
+              <td>
+                  <strong id="highPercent"></strong>
+                <div class="arrow">
+                  <img id="highArrow">
+                </div>
+              </td>
+              <td>
+                  <strong id="lowPercent"> </strong>
+                <div class="arrow">
+                  <img id="lowArrow">
+                </div>
+              </td>
+              <td>
+
+                  <strong id="closePercent">
+                  </strong>
+                <div class="arrow">
+                  <img id="closeArrow">
+                </div>
+              </td>
+              <td>
+                  <strong id="volumePercent"></strong>
+                <div class="arrow">
+                  <img id="volumeArrow">
+                </div>
+              </td>
+              <td>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+
+    <!-- <form id="form">
+      <input type="search" id="query" name="q" placeholder="Search..." />
+      <button>Search</button>
+    </form> -->
+
+
+    
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
