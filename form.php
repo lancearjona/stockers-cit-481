@@ -3,7 +3,7 @@
   $email = $_POST['email'];
   $message = $_POST['message'];
   $formcontent="From: $name \n Message: $message";
-  $recipient = $_POST['ninushki@gmail.com'];
+  $recipient = "nino.shtromberg.598@my.csun.edu";
 
   $email_from = "name";
   $subject = "Contact Form";
