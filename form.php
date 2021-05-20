@@ -10,6 +10,6 @@
   $mailheader = "From: $email \r\n";
   $email_to = $recipient;
   
-  mail($email_from, $subject, $formcontent, $mailheader, email_to) or die("Error!");
+  mail($email_from, $subject, $formcontent, $mailheader, $email_to) or die("Error!");
   echo "Thank You!";
 ?>
