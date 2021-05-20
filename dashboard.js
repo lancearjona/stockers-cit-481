@@ -303,6 +303,10 @@ fetch("https://alpha-vantage.p.rapidapi.com/query?function=TIME_SERIES_DAILY&sym
   let dateFive = timeSeries["2021-04-15"];
   let dateSix = timeSeries["2021-04-22"];
   let dateSeven = timeSeries[lastDate];
+  let extraPointOne = timeSeries["2021-05-06"];
+  let extraPointTwo = timeSeries["2021-05-12"];
+  let extraPointThree = timeSeries["2021-05-17"];
+  
   
   var dateOneOpen = dateOne["1. open"];
   var dateOneHigh = dateOne["2. high"];
@@ -312,11 +316,15 @@ fetch("https://alpha-vantage.p.rapidapi.com/query?function=TIME_SERIES_DAILY&sym
   
    dateOne = dateOne[graphType];
    dateTwo = dateTwo[graphType];
-   dateThree= dateThree[graphType];
+   dateThree = dateThree[graphType];
    dateFour = dateFour[graphType];
    dateFive = dateFive[graphType];
-   dateSix= dateSix[graphType];
-   dateSeven= dateSeven[graphType];
+   dateSix = dateSix[graphType];
+   dateSeven = dateSeven[graphType];
+  
+   extraPointOne = extraPointOne[graphType];
+   extraPointTwo = extraPointTwo[graphType];
+   extraPointThree = extraPointThree[graphType];
 
 
   /* globals Chart:false, feather:false */
@@ -339,6 +347,9 @@ fetch("https://alpha-vantage.p.rapidapi.com/query?function=TIME_SERIES_DAILY&sym
         "2021-04-13",
         "2021-04-15",
         "2021-04-22",
+        "2021-05-06",
+        "2021-05-12",
+        "2021-05-17",
         lastDate
       ],
       datasets: [{
@@ -349,6 +360,9 @@ fetch("https://alpha-vantage.p.rapidapi.com/query?function=TIME_SERIES_DAILY&sym
           dateFour,
           dateFive,
           dateSix,
+          extraPointOne,
+          extraPointTwo,
+          extraPointThree,
           dateSeven
         ],
         lineTension: 0,
